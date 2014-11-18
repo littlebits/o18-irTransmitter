@@ -1,0 +1,22 @@
+Programming Instructions
+
+Step 1) Flash the micro controller with the accompanying .hex file.
+
+Step 2) Set the fuses on the micro controller. Use the following fuse settings:
+
+		EXTENDED:	0xFF
+		HIGH:		0x5D
+		LOW:		0xEF
+
+Notes:
+1. CAUTION!! Step 1 MUST BE DONE FIRST!!! Burning the fuses makes the unit un-programmable.
+2. Programming header data:
+	6 pads on the bottom side
+	Pad 1 is square
+	Signal Description:
+	Pad 1 = MISO = pin 6 on U1
+	Pad 2 = SCK = pin 7 on U1
+	Pad 3 = MOSI = pin 5 on U1
+	Pad 4 = RESET = pin 1 on U1
+	Pad 5 = GND
+	Pad 6 = VCC
